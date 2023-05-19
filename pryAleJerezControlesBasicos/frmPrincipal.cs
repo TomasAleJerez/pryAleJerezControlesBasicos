@@ -30,12 +30,12 @@ namespace pryAleJerezControlesBasicos
 
         private void label1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace pryAleJerezControlesBasicos
 
         private void frmPrincipal_Enter(object sender, EventArgs e)
         {
-           
+
         }
 
         private void frmPrincipal_MouseEnter(object sender, EventArgs e)
@@ -59,6 +59,12 @@ namespace pryAleJerezControlesBasicos
             int maxWidth = this.Width - lblBienvenido.Width;
             int maxHeight = this.Height - lblBienvenido.Height;
             lblBienvenido.Location = new Point(random.Next(maxWidth), random.Next(maxHeight));
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            frmCajaDeTexto frmCajaDeTexto = new frmCajaDeTexto();
+            frmCajaDeTexto.ShowDialog();
         }
     }
 }

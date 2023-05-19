@@ -31,6 +31,7 @@
             this.lblX = new System.Windows.Forms.Label();
             this.lblY = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblX
@@ -72,11 +73,24 @@
             this.lblBienvenido.VisibleChanged += new System.EventHandler(this.label1_VisibleChanged);
             this.lblBienvenido.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Location = new System.Drawing.Point(368, 292);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(115, 46);
+            this.btnIngresar.TabIndex = 3;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.lblY);
             this.Controls.Add(this.lblX);
@@ -100,5 +114,6 @@
         private System.Windows.Forms.Label lblX;
         private System.Windows.Forms.Label lblY;
         private System.Windows.Forms.Label lblBienvenido;
+        private System.Windows.Forms.Button btnIngresar;
     }
 }

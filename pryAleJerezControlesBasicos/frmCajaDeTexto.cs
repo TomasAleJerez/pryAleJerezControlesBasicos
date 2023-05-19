@@ -36,6 +36,31 @@ namespace pryAleJerezControlesBasicos
             }
 
         }
-      
+
+        private void btnSeleccionar_Click(object sender, EventArgs e)
+        {
+            string TextoConcatenar = "";
+
+            if (chkArroz.Checked == true)
+            {
+                lblSeleccionar.Text = "Arroz";
+                TextoConcatenar = TextoConcatenar + "Arroz";
+            }
+            if (chkMostaza.Checked == true)
+            {
+                lblSeleccionar.Text = "Mostaza";
+                TextoConcatenar = TextoConcatenar + "Mostaza";
+            }
+            if (chkPollo.Checked == true)
+            {
+                lblSeleccionar.Text = "Pollo";
+                TextoConcatenar = TextoConcatenar + "Pollo";
+            }
+            lblSeleccionar.Text = TextoConcatenar;
+
+        }
+    }
 }
-}
+
+
+

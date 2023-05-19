@@ -16,7 +16,7 @@ namespace pryAleJerezControlesBasicos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCajaDeTexto());
+            Application.Run(new frmPrincipal());
         }
     }
 }
